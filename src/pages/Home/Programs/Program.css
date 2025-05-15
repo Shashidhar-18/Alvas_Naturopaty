@@ -1,0 +1,135 @@
+/* Responsive CSS for Programs Component */
+.programs {
+    margin: 60px auto; /* Reduced margin for better spacing */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Program Card */
+.program {
+    flex-basis: 28%; /* Reduced card width */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px; /* Slightly smaller corners */
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.program img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Hover effect for zoom */
+.program:hover {
+    transform: translateY(-5px); /* Reduced hover lift */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.program:hover img {
+    transform: scale(1.05); /* Reduced hover scale */
+}
+
+/* Caption Overlay */
+.caption {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 15, 152, 0.5); /* Adjusted opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Hover effect for caption */
+.program:hover .caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Caption Icon */
+.caption img {
+    width: 50px; /* Reduced icon size */
+    margin-bottom: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icon */
+.program:hover .caption img {
+    transform: scale(1.15) rotate(3deg);
+}
+
+/* Caption Text */
+.caption p {
+    font-size: 1rem; /* Reduced text size */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Text Animation on Hover */
+.program:hover .caption p {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .programs {
+        gap: 25px;
+    }
+
+    .program {
+        flex-basis: 40%; /* Slightly smaller on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .programs {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .program {
+        flex-basis: 90%; /* Smaller card for mobile */
+    }
+
+    .caption p {
+        font-size: 0.9rem; /* Adjusted for smaller screens */
+    }
+
+    .caption img {
+        width: 40px; /* Smaller icon */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .program {
+        flex-basis: 100%;
+        border-radius: 10px;
+    }
+
+    .caption p {
+        font-size: 0.85rem;
+    }
+
+    .caption img {
+        width: 35px;
+    }
+}

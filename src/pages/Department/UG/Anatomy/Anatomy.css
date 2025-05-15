@@ -1,0 +1,59 @@
+
+.department h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #1e4ea1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.department h2::after {
+content: "";
+width: 80px;
+height: 4px;
+background-color: #1e4ea1;
+display: block;
+margin: 8px auto 0;
+border-radius: 5px;
+}
+
+
+.department h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #1e4ea1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.anatomy-container {
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 12px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.department {
+    margin-bottom: 40px;
+}
+
+.department p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #000000;
+    text-align: justify;
+}

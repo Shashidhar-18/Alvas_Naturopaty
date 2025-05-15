@@ -1,0 +1,124 @@
+.poster-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.poster-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: #1e4ea1;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.poster-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.poster-card:hover {
+  transform: scale(1.03);
+}
+
+.poster-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Alumni Section Styling === */
+.alumni-section {
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.alumni-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.alumni-image {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.alumni-details h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #2e6d57;
+}
+
+.alumni-details h4 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.alumni-details p {
+  line-height: 1.6;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.alumni-details ul {
+  padding-left: 1.5rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.alumni-details ul li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  list-style: disc;
+}
+
+.alumni-extra-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.alumni-extra-images img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+/* New Alumni Container styled like poster-container */
+.alumni-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin-top: 3rem;
+}

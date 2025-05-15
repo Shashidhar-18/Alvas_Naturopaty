@@ -1,0 +1,74 @@
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    background: #f7fbff; /* Light background */
+  }
+  
+  .stats-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    width: 300px; /* Increased card size */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .stat:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 50px; /* Larger icon */
+    color: #1e73be; /* Blue color */
+    background: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+  
+  .stat h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .statp {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .stats-row {
+      gap: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stats-row {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .stat {
+      width: 90%;
+      padding: 30px;
+    }
+  }
+  
